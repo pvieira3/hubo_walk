@@ -556,11 +556,9 @@ void HuboWalkWidget::initializeCommandTab()
     paramLayout->addWidget(walkDistanceBox, 0, Qt::AlignLeft);
     
     continuousBox = new QCheckBox;
-    continuousBox->setChecked(false);
     continuousBox->setText("Continuous");
     continuousBox->setToolTip("Ignore the walk distance, and walk until Stop is selected");
     continuousBox->setChecked(true);
-    continuousBox->setDisabled(true);
     paramLayout->addWidget(continuousBox, 0, Qt::AlignLeft);
 
     QLabel* rotateAngleLab = new QLabel;
